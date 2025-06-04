@@ -3,7 +3,7 @@ import Reactlogo from './assets/logo.svg?react';
 import './App.css';
 
 export const App = () => {
-	const currentYear = new Date().getFullYear();
+	const currentYear = new Date().getFullYear(); // императивный
 
 	return (
 		<div className="App">
@@ -11,7 +11,6 @@ export const App = () => {
 				<Reactlogo className="App-logo" alt="logo" />
 				{/* Вставляет как кампонент (нельзя выделить) или как картинку (ниже строчка кода) */}
 				{/* <img src={logo} className="App-logo" alt="logo" /> */}
-
 				<p>
 					Edit <code>src/App.js</code> and save to reload.
 				</p>
@@ -23,7 +22,7 @@ export const App = () => {
 				>
 					Learn React
 				</a>
-				<p> {currentYear} </p>
+				<p> {currentYear} </p> //декларативный
 			</header>
 		</div>
 	);
